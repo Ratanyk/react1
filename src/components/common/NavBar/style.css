@@ -1,0 +1,41 @@
+@import '../../../styles/colors.css';
+@import '../../../styles/typefaces.css';
+
+nav {
+  background: var(--color-pale-grey);
+  height: 95px;
+  width: 100%;
+}
+ nav .menu-item {
+    height: 100%;
+ }
+ nav .menu-item:hover, nav .menu-item.selected {  
+  transform: scaleY(1.5);
+  transform-origin:  center;
+  background: var(--color-pale-grey);
+ }
+ nav .menu-item:hover a, nav .menu-item.selected a {  
+  transform: scaleY(0.66);
+  text-decoration: none;
+ }
+
+ nav .menu-item:hover a .navbar-text, nav .menu-item.selected a .navbar-text{  
+  color: var(--color-cerulean);
+ }    
+nav .menu-item svg{
+  margin-right: 17px;
+}
+
+nav .menu-item a{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-family: Karbon;
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--color-charcoal-grey);
+  text-decoration: none;
+}
